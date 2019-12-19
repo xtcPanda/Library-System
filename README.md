@@ -1,6 +1,7 @@
 # Library-System
 
 ## TO-DO list
+- [ ] Design the html and css for the pages
 - [ ] Add, modify and delete book details
 - [ ] Search feature for finding book availability in library stock.
 - [ ] The books are categorized
