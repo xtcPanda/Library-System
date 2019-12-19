@@ -1,7 +1,8 @@
 # Library-System
 
 ## TO-DO list
-- [ ] Design the html and css for the pages > @In_progress
+- [ ] Design the html and css for the pages
+> @In_progress
 - [ ] Add, modify and delete book details
 - [ ] Search feature for finding book availability in library stock.
 - [ ] The books are categorized
