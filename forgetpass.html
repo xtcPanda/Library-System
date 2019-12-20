@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <link rel="stylesheet" type="text/css" href="..\Styles\style.css"> <!--  I copied css link   -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+<!-- copied from student page   -->
+ <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="..\Styles\style.css">
+    <script type="text/javascript" src="..\Scripts\script.js"></script>
+    <title>Forget Password</title>
 </head>
-<body style="background-image: url(../Log-In/images/forget.jpg);"> <!--  putting background image   -->
-<section>
-      <form name="login" action="" method="post">
-        <br><br>
+<body 
+    <div class="bg" style="background-image: url('../Home/images/5.jfif');">
+      <div class="container">
+         <h1><b> Type in your username or email </b></h1>  <!- change username or email    -->
+        <form name="login" action="" method="" style="margin-left: 30%; margin-top:20%">
+          <div class="login">
+            <input type="email" name="email" placeholder="Type Email" required="">
+            <br>
+            <button class="button" style="margin-bottom: : 7.5%;">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-
-	<div style="color:red;"><!-- I put two elements into div section to change its color to make it clear on background  -->
-<h2><b>Forgot your username or password? </b> </h2>
-<h1> <b>Type in your member name or email address</b> </h1>
-</div>
-          <input style="width:50%;"type="email" name="forget password" placeholder="enter your email!"  required=""> <br><br>
-
-         <button class="button" style="color:red;"><span>Send Email </span></button>
-      </form>
-</section>
+    <!--navigation bar-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="..\Home\index.html">Home</a>
+        <a href="#">Books</a>
+        <a href="../Log-In/Log-in.html">Log In</a>
+        <a href="../Sign-Up/signup.html">Sign Up</a> <!-- add sign up link -->
+      </div>
+      <img id="nav-menu" src="../Home/images/side-nav-menu.png" onclick="openNav()" width="100" hieght="100">
 </body>
