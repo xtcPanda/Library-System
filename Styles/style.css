@@ -176,9 +176,9 @@ body, html{
 }
 
 #section {
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+
 height: 100%;
 position: relative;
 }
+
+/*Drop down menu*/
