@@ -136,3 +136,12 @@ body, html{
 	left: 20%;
 	top: 30%;
 }
+
+.dropdown-btn {
+  display: block;
+  outline: none;
+}
+
+.dropdown-container {
+  display: none;
+}
