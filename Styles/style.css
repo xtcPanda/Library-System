@@ -85,7 +85,7 @@ body, html{
 .sidenav .closebtn {
 	position: absolute;
 	top: 0;
-	left: 25px;
+	left: 80%;
 	font-size: 36px;
 	margin-right: 50px;
 }
@@ -101,11 +101,6 @@ body, html{
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
-
-/*#section {
-	background-size: cover;
-	max-height: 100%;
-}*/
 
 
 .button {
@@ -178,4 +173,12 @@ body, html{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#section {
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100%;
+position: relative;
 }
