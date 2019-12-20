@@ -1,11 +1,10 @@
 
 
-	<link rel="stylesheet" type="text/css" href="..\Styles\style.css">
+<link rel="stylesheet" type="text/css" href="..\Styles\style.css">
 
 
-	<script type="text/javascript" src="..\Scripts\script.js"></script>
-
-	<div class="bg" style="background-image: url('../Home/images/wallpaper.jfif');">
+<script type="text/javascript" src="..\Scripts\script.js"></script>
+<div class="bg" style="background-image: url('../Home/images/wallpaper.jfif');">
 		<div class="caption">
 			<span class="border">Welcome to</span>
 			<br>
@@ -26,10 +25,10 @@
 		</div>
 		<img id="nav-menu" src="images/side-nav-menu.png" onclick="openNav()" width="100" hieght="100">
 
-	<div id="main">
+<div id="main">
 		
 
-			<div id="sectiont">
-					<p id="about" style="text-align: center; font-size: 35px;">About Us</p>
-			</div>
-	</div>
+<div id="sectiont">
+	<p id="about" style="text-align: center; font-size: 35px;">About Us</p>
+</div>
+</div>
