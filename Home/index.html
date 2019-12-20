@@ -4,61 +4,64 @@
 	<title>Online Library Management System</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<style type="text/css">
-	nav
-	{
-		float: right;
-		word-spacing: 30px;
-		padding: 20px;
-	}
-	nav li
-	{
-		display: inline-block;
-		line-height: 80px;
-	}
-</style>
+
+<script type="text/javascript">
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
 </head>
 
 
 <body>
-	<div class="wrapper">
-		<header>
-		<div class="logo">
-			<img src="images/9.png">
-			<h1 style="color: white;">ONLINE LIBRARY MANAGEMENT SYSTEM</h1>
-		</div>
-			<nav>
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="books.html">BOOKS</a></li>
-					<li><a href="student_login.html">STUDENT-LOGIN</a></li>
-					<li><a href="admin_login.html">ADMIN-LOGIN</a></li>
-					<li><a href="feedback.php">FEEDBACK</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section>
-		<div class="sec_img">
+
+
+	<div class="bg">
+		<div class="caption">
+			<span class="border">Welcome to</span>
 			<br>
-			 <br>
-			  <br>
-			<div class="box">
-				<br><br><br><br>
-				<h1 style="text-align: center; font-size: 35px;">Welcom to library</h1><br><br>
-				<h1 style="text-align: center;font-size: 25px;">Opens at: 09:00 </h1><br>
-				<h1 style="text-align: center;font-size: 25px;">Closes at: 15:00 </h1><br>
-			</div>
+			<span class="border">The Library System !</span>
 		</div>
-		</section>
-		<footer>
-			<p style="color:white;  text-align: center; ">
-				<br><br>
-				Email: Online.library@gmail.com <br>
-				Mobile: +0201*********
-			</p>
-		</footer>
+		<div class="Footer">
+			<span class="border">everyday from 9:00 am to 3:00 pm</span>
+		</div>
+	</div>
+	<!--navigation bar-->
+		<div id="mySidenav" class="sidenav">
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  	<a href="index.html">Home</a>
+	  	<a href="#">Books</a>
+	  	<a href="#">Log In</a>
+			<a href="#">Sign Up</a>
+		</div>
+		<img id="nav-menu" src="images/side-nav-menu.png" onclick="openNav()" width="100" hieght="100">
+
+	<div id="main">
+		<!--<div id="section">
+    <h5><span>Description</span></h5>
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div>
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+</div>-->
+
+			<div id="sectiont">
+					<p style="text-align: center; font-size: 35px;">About US</p>
+			</div>
 	</div>
 </body>
 
