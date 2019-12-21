@@ -1,7 +1,9 @@
 # Library-System
 
 ## TO-DO list
+### fron-end
 - [ ] Design the html and css for the pages
+### back-end
 - [ ] Add, modify and delete book details
 - [ ] Search feature for finding book availability in library stock.
 - [ ] The books are categorized
