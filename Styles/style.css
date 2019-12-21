@@ -135,7 +135,7 @@ body, html{
 /*About Style for the images*/
 .imageContainer {
   position: relative;
-	width: 30%;
+	width: 100%;
 	height: auto;
 }
 
