@@ -27,13 +27,13 @@ body, html{
 	font-size: 25px;
 	letter-spacing: 10px;
 }
-.Footer{
+.FooterHome{
 	position: absolute;
 	left: 8%;
 	bottom: 10%;
 	text-align: center;
 }
-.Footer span.border{
+.FooterHome span.border{
 	background: #111;
 	color: #fff;
 	padding: 10px;
@@ -132,51 +132,9 @@ body, html{
 	top: 30%;
 }
 
-/*About Style for the images*/
-.imageContainer {
-  position: relative;
-	width: 100%;
-	height: auto;
-}
-
-.AboutImage {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: gray;
-}
-
-.imageContainer:hover .overlay {
-  opacity: 1;
-}
-
-.AboutTextImage {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 #section {
 
-height: 100%;
 position: relative;
 }
 
