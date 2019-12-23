@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="الأحد, 22 ديسمبر 2019 22:48:59 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="" />
+   
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <style>
+   button{
+     height:100px;
+     width: 80px;
+     text-align: center;
+     margin: 5px 4px;
+   }
+  #mainButtons button{
+    display: inline-block;
+    margin: auto;
+    }
+   </style>
+
+
+<div id="mainButtons">
+ <button onclick="addButton()">add Button</button>
+ <button onclick="removeButton()">Remove Button</button>
+</div>
+</br>
+<div id="que"></div>
+
+<script>
+var increment = 0;
+function addButton(){
+ $("#que").append($("<button id='btn"+(increment++)+"'>This is Button"+ (increment)+"</button>"));
+}
+
+function removeButton(){
+  $("#btn"+(increment-1)).remove();
+  increment--;
+}
+</script>
+  </head>
+  <body>
+
+  </body>
+</html>
