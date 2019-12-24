@@ -2,24 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Books</title>
+    <title>Thriller</title>
   <link rel="stylesheet" type="text/css"  href="../Styles/style.css">
   <script type="text/javascript" src="..\Scripts\script.js"></script>
+  <style>
 
+
+    body {
+  background-image: url('white.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.dropbtn {
+  background-color: #808080;
+  color: white;
+  padding: 25px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+    float:right;
+
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #d1a9b8;}
+
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+</style>
 </head>
-<div class="bg" style="background-image: url('../Books/images/WhatsAppImage.jpeg');">
+
 
 <!--navigation bar-->
-    <div class="topnav">
-   
-  <a class="active" href= "classic.html">Classic</a>
-  <a href="comedy.html">Comedy</a>
-  <a href="fantasy.html">Fantasy</a>
+<div class="dropdown">
+  <button class="dropbtn">Options</button>
+  <div class="dropdown-content">
+    <a href="classic.html">Classic</a>
+    <a href="comedy.html">Comedy</a>
+     <a href="fantasy.html">Fantasy</a>
   <a href="poetry.html">Poetry</a>
 <a href="thriller.html">Thriller</a>
 <a href="../Home/index.html">Home</a>
-</div>
-      <input type="text" placeholder="Search.." style="margin-left:30%; margin-top:30%;">
+  </div>
+      <input type="text" placeholder="Search.." style="margin-left:30%; margin-top:5%; width:30%">
 
 
 
@@ -34,7 +94,7 @@
    <img src="gotr.jpg" style="width:150px;height:250px;" alt="book"/>
    </div>
    <div class="content">
-   <h2>	The Girl on the Train  </h2>
+   <h2>	The Girl on the Train</h2>
    <p> by Paula Hawkins</p>
    <span> more info about it..</span>
   <button>Read it!</button>
@@ -193,6 +253,7 @@
    <div class="icon">
    <img src="itw.jpg" style="width:150px;height:250px;" alt="book" />
    </div>
+   
    <div class="content">
    <h2>Into the Water</h2>
    <p>by Paula Hawkins</p>
@@ -216,7 +277,7 @@
 
 </footer>
 
-   
+
 
   </body>
 </html>
