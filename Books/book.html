@@ -17,7 +17,7 @@ body {
 .dropbtn {
   background-color: #808080;
   color: white;
-  padding: 16px;
+  padding: 25px;
   font-size: 16px;
   border: none;
 }
@@ -66,10 +66,10 @@ input[type=text]:focus {
 <body>
 
 
- <input type="text" name="search" placeholder="Search..">
  <!-- slideshow link https://getbootstrap.com/docs/4.0/components/carousel/ -->
 <!-- slideshow w3scools link https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
-<h1 style="text-align: center;">Book List</h1>
+
+<!--<h1 style="text-align: center;">Book List</h1>-->
    <!--navigation bar-->
      <div id="mySidenav" class="sidenav">
        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -81,9 +81,7 @@ input[type=text]:focus {
      </div>
 
 
-<p><h1>Move the mouse over the button to choose your favourite type of books.</h1></p>
-
-<div class="dropdown">
+   <div class="dropdown">
   <button class="dropbtn">Options</button>
   <div class="dropdown-content">
     <a href="classic.html">Classic</a>
@@ -94,6 +92,10 @@ input[type=text]:focus {
 <a href="../Home/index.html">Home</a>
   </div>
 </div>
+
+<input type="text" name="search" placeholder="Search.." style="margin-left:30%; margin-top:5%; width:30%" >
+<h1 style="text-align: center;">Book List</h1>
+
 <a style="text-decoration:none" href="#"><img id="nav-menu" src="../Home/images/side-nav-menu.png" onclick="openNav()" width="100" hieght="100">
 </a>
 
