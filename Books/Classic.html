@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>classic</title>
-  <link rel="stylesheet" type="text/css"  href="../Styles/style.css">
+  <link rel="stylesheet" type="text/css"  href="button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="..\Scripts\script.js"></script>
 <style>
 
    
     body {
-  background-image: url('white.jpg');
+  background-image: url('background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -60,12 +61,68 @@ input[type=text] {
   transition: width 0.4s ease-in-out;
 }
 
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
-  width: 100%;
+
+
+
+
+form{
+    position: relative;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
 }
 
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
 
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
 
     </style>
 </head>
@@ -82,49 +139,56 @@ input[type=text]:focus {
 <a href="thriller.html">Thriller</a>
 <a href="../Home/index.html">Home</a>
 </div>
-
-
-      <input type="text" placeholder="Search.." style="margin-left:30%; margin-top:5%; width:30%">
-
-
-
-
 <h1 style="text-align: center;">Book List</h1>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<form action="">
+  <input type="search" placeholder="Search">
+  <i class="fa fa-search"></i>
+</form>
+
+
+
    <table style="margin:0 auto;">
 
      <tr>
-       <td>
+       <td style="padding-left:0">
    <div class="book">
    <div class="icon">
-   <img src="alch.jpg" style="width:150px;height:250px;" alt="book"/>
+   <img src="alch.jpg" style="width:150px;height:250px;"  alt="book"/>
    </div>
-   <div class="content">
+   
    <h2>	The Alchemist </h2>
 
    <p>by Paulo Coelho</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
-   </div>
-   </div>
+<div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
 </td>
-<td>
+
+
+<td style="padding-left:0">
     <div class="book">
    <div class="icon">
-   <img src="gats.jpg"  style="width:150px;height:250px;" alt="book" />
+   <img src="gats.jpg"  style="width:150px;height:250px;"alt="book" />
    </div>
    <div class="content">
    <h2>	The Great Gatsby</h2>
 
    <p>by F. Scott Fitzgerald</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+  <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
+     
    </div>
    </div>
 </td>
 
 
-  <td>
-       <div class="book">
+  <td style="padding-left:0">
    <div class="icon">
    <img src="wom.jpg" style="width:150px;height:250px;" alt="book" />
    </div>
@@ -133,11 +197,15 @@ input[type=text]:focus {
    <p>by Louisa May Alcott</p>
    <p>book details</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+  <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
-<td>
+
+<td style="padding-left:0">
     <div class="book">
    <div class="icon">
    <img src="pride.jpg" style="width:150px;height:250px;" alt="book" />
@@ -147,7 +215,10 @@ input[type=text]:focus {
    <p>by Jane Austen</p>
    <p>book details</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+ <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
  </td>
 </tr>
@@ -164,7 +235,10 @@ input[type=text]:focus {
 
    <p>by Charlotte Brontë</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+  <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
@@ -177,7 +251,10 @@ input[type=text]:focus {
    <h2>	Romeo and Juliet</h2>
    <p>by William Shakespeare</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+ <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
@@ -193,7 +270,10 @@ input[type=text]:focus {
    <p>by William Golding</p>
    <p>book details</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+ <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
@@ -207,7 +287,10 @@ input[type=text]:focus {
    <p>by  Charles Dickens </p>
    <p>book details</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+ <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
  </td>
 </tr>
@@ -223,7 +306,10 @@ input[type=text]:focus {
    <h2>	The Count of Monte Cristo </h2>
    <p>by Alexandre Dumas</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+<div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
@@ -236,7 +322,10 @@ input[type=text]:focus {
    <h2>	Hamlet </h2>
    <p>by William Shakespeare</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+<div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
@@ -252,7 +341,10 @@ input[type=text]:focus {
    <p>by Frances Hodgson Burnett</p>
    <p>book details</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+ <div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
    </div>
 </td>
@@ -266,7 +358,10 @@ input[type=text]:focus {
    <p>by Victor Hugo </p>
    <p>book details</p>
    <span> more info about it..</span>
-  <button>Read it!</button>
+<div class="container">
+  <div class="wrap">
+     <div class="first">Read</div>
+   </div></div>
    </div>
  </td>
 </tr>
@@ -281,8 +376,6 @@ input[type=text]:focus {
   <a href="#"><i class="fa fa-twitter" style="color:white;"></i></a>
   <a href="#"><i class="fa fa-flickr" style="color:white;"></i></a>
   <a href="#"><i class="fa fa-linkedin" style="color:white;"></i></a>
-
-
 
 </footer>
 
